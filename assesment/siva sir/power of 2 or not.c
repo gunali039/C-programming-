@@ -11,25 +11,26 @@ int main(void) {
 	{
 		for(i=0;i<n;i++)
 		{
+			flag=0;
 		
-		            if(n%2==0)
+		            if(n%2!=0)
 	                  	{
-		                  flag=0;
-				d=n/2;
-				if(d%2==0&&d==2)
-				{
-					flag=flag+1;
-					break;
-				}
-				else
-				{
-				n=d;
-				continue;
-			             }
-	                       }
+		                  flag=1;
+		                  break;
+	                  	}
+	                  	else
+	                  	{
+				         d=n/2;
+			         	    if(d%2==0&&d==2)
+				            {
+					       flag=0;
+					        break;
+				          }
+				         }
+				         n=n/2;
 	
 		}
-		if(flag==1)
+		if(flag==0)
  	            {
 		printf("It is the power of 2\n");
              	}
@@ -38,9 +39,5 @@ int main(void) {
 		printf("It is not the power of 2\n");
 	            }
 	}
-	
-	
-	
-
-	return 0;
-}
+	            return 0;
+	}
