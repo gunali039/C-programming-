@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(void)
+{
+  int i,j,d=1,n=100;
+  scanf("%d",&j);
+  printf("%d",d);
+  printf("\n");
+  for(i=2;i<=j;i++)
+  {
+    d=i*n+((d)*10)+i;
+    printf("%d",d);
+    printf("\n");
+    n=n*100;
+  }
+  return 0;
+}
