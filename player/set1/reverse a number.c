@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(void) {
 	int i,n;
 	char a[10];
